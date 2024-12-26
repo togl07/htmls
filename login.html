@@ -1,0 +1,40 @@
+<!--@extends('components.main')-->
+<!--@section('title')-->
+<title>Kirish</title>
+<!--@endsection-->
+<!--@section('content')-->
+    <style>
+        @media screen and (min-width: 1024px){
+            /*
+            Kompyuter uchun
+            */
+            .btn{
+                background-color: aqua;
+                color: white;
+                border: none;
+                width: 20%;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 1000px){ 
+            /* telefon uchun */
+            .btn{
+                background-color: black;
+                color: white;
+                background-image:c:\Users\ASUS\Desktop\test-disc-en-entretien.webp;
+            }
+        }
+    </style>
+        <h2>Shaxsiy kabinentga kirish</h2>
+    <div class="input-group">
+        <label for="username">Foydalanuvchi nomi:</label>
+        <input type="text" id="username" name="username" required>
+    </div><br>
+    <div class="input-group">
+        <label for="password">Parol:</label>
+        <input type="password" id="password" name="password" required>
+    </div><br>
+</div class="register-link">
+            <p>Hisobingiz yo'qmi? <a href="#">Ro'yxatdan o'ting</a></p>
+        </div>
+    <button type="submit" class="btn">Kirish</button>
+<!-- @endsection -->       
