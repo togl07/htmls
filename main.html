@@ -1,0 +1,28 @@
+<!--@extends('components.main')-->
+<!--@section('title')-->
+<title>Bosh sahifa</title>
+<!--@endsection-->
+<!--@section('content')-->
+    <style>
+        @media screen and (min-width: 1024px){
+            /*
+            Kompyuter uchun
+            */
+            .btn{
+                background-color: aqua;
+                color: white;
+                border: none;
+                width: 20%;
+                margin-left: 90px;
+            }
+        }
+        @media screen and (min-width: 600px) and (max-width: 1000px){ 
+            /* telefon uchun */
+            .btn{
+                background-color: black;
+                color: white;
+            }
+        }
+    </style>
+    <button class="btn">Bos</button>
+<!-- @endsection -->       
